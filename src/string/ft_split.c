@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "str.h"
 
 static char	*split_dup(const char *s, char c)
 {
