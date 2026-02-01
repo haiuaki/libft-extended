@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string.h"
+#include "str.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

@@ -18,7 +18,7 @@
 # include "io.h"
 # include "list.h"
 # include "memory.h"
-# include "string.h"
+# include "str.h"
 
 # include "ft_printf.h"
 # include "get_next_line.h"
