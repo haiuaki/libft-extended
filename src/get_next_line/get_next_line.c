@@ -58,7 +58,7 @@ char	*get_next_line(int fd, int clean)
 
 	buffer = init_buffer(fd, clean);
 	if (!buffer)
-		return (free(stash[fd]), NULL);
+		return (free(stash[fd]), stash[fd] = NULL, NULL);
 	bytes_read = 1;
 	while (!gnl_strchr(stash[fd], '\n') && bytes_read > 0)
 	{
