@@ -6,7 +6,7 @@
 #    By: juljin <juljin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/04 13:29:07 by juljin            #+#    #+#              #
-#    Updated: 2026/01/03 22:17:34 by juljin           ###   ########.fr        #
+#    Updated: 2026/04/01 15:40:34 by juljin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ CTYPE_SRC	= ctype/ft_abs.c \
 			  ctype/ft_isdigit.c \
 			  ctype/ft_isprint.c \
 			  ctype/ft_isspace.c \
+			  ctype/ft_str_isspace.c \
 			  ctype/ft_tolower.c \
 			  ctype/ft_toupper.c
 

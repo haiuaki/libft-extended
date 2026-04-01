@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ctype.h                                            :+:      :+:    :+:   */
+/*   ft_str_isspace.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juljin <juljin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 20:15:42 by juljin            #+#    #+#             */
-/*   Updated: 2026/04/01 15:41:00 by juljin           ###   ########.fr       */
+/*   Created: 2026/04/01 15:33:26 by juljin            #+#    #+#             */
+/*   Updated: 2026/04/01 15:41:53 by juljin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CTYPE_H
-# define CTYPE_H
+#include "str.h"
 
-int		ft_abs(int j);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_isspace(int c);
-int		ft_str_isspace(const char *str);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
+int	ft_str_isspace(const char *str)
+{
+	size_t	i;
 
-#endif
+	if (!str)
+		return (0);
+	i = 0;
+	while (str[i])
+	{
+		if (!((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
+			return (0);
+		i++;
+	}
+	return (1);
+}
