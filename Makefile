@@ -6,7 +6,7 @@
 #    By: juljin <juljin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/04 13:29:07 by juljin            #+#    #+#              #
-#    Updated: 2026/04/01 15:40:34 by juljin           ###   ########.fr        #
+#    Updated: 2026/05/12 14:26:53 by juljin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,7 @@ MEM_SRC		= memory/ft_bzero.c \
 # String functions
 STR_SRC		= string/ft_free_array.c \
 			  string/ft_split.c \
+			  string/ft_arraydup.c \
 			  string/ft_strchr.c \
 			  string/ft_strcmp.c \
 			  string/ft_strdup.c \
